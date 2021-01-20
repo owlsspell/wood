@@ -1,0 +1,569 @@
+body {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #c0301c;
+}
+
+/*header*/
+
+header {
+    background: url("./img/bg_head.png") center no-repeat;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 30px;
+    color: #ffffff;
+}
+
+.nav-link {
+    font-size: 1.5em;
+}
+
+header .navbar-light .navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+header .navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+
+
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-image: url(./img/toggle.png);
+
+}
+
+.navbar-light .navbar-toggler.active .navbar-toggler-icon {
+    background-image: url(./img/close.png);
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+header .nav-item a::after {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 18vh;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+header h3 {
+    font-size: 1.5em;
+}
+
+.white_btn {
+    padding: 10px 30px;
+    color: #fff;
+    border-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.white_btn:hover {
+    color: #c0301c;
+    background-color: #fff;
+}
+
+/*services*/
+
+.services {
+    text-align: center;
+}
+
+.services h3 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.line {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #555555;
+    margin: 30px auto;
+}
+
+.circle {
+    display: block;
+    content: "";
+    border-radius: 50%;
+    height: 95px;
+    width: 95px;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+    font-size: 55px;
+}
+
+.circle-red {
+    background-color: #c0301c;
+    color: #fff;
+}
+
+.services .card-t {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services .card {
+    border: none;
+}
+
+.services .card-deck {
+    margin: 70px 0;
+}
+
+/*about us*/
+
+.about {
+    text-align: center;
+}
+
+.about .col {
+    text-align: left;
+    margin: 60px auto;
+}
+
+.team img {
+    height: 100%;
+    width: 100%;
+}
+
+.dark-arrow {}
+
+.about .img__block {
+    background-color: black;
+    height: 100%;
+    width: auto;
+}
+
+.about .img__block:hover img {
+    opacity: 0.5;
+}
+
+.linking {
+    opacity: 0;
+}
+
+.linking a,
+i {
+    padding: 5px;
+}
+
+.about .img__block:hover .linking {
+    opacity: 1;
+}
+
+.linking a:hover {
+    background-color: #c0301c;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 3%;
+    height: 15%;
+    bottom: 100px;
+    background-color: #555;
+    top: 30%;
+}
+
+.team .card {
+    border: 0;
+}
+
+.card-img-overlay {
+    margin-top: 150px;
+}
+
+.team .card-img-overlay a {
+    color: #fff;
+    margin: 5px;
+}
+
+/*latestWorks*/
+
+.latestWorks {
+    text-align: center;
+}
+
+.latestWorks h3 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.latestWorks .img__block {
+    background-color: black;
+    width: auto;
+    min-height: 210px;
+    height: 100%;
+}
+
+.latestWorks .img__block:hover img {
+    opacity: 0.5;
+}
+
+.latestWorks img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+}
+
+.latestWorks .row {
+    margin-bottom: 30px;
+}
+
+.latestWorks .row__block {
+    margin: 60px auto;
+}
+
+.latestWorks p {
+    padding: 0 10px;
+}
+
+/*contacs*/
+
+.contacs {
+    text-align: center;
+    background: url("./img/bg_contacs.png") center no-repeat;
+    color: #fff;
+}
+
+.contacs h3 {
+    text-transform: uppercase;
+}
+
+.contacs .text_h3 {
+    margin: 100px auto;
+    line-height: 2;
+}
+
+/*blog*/
+.blog {
+    text-align: center;
+}
+
+.blog h3 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.post {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.post .calendar {
+    display: block;
+    content: "";
+    height: 77px;
+    width: 77px;
+    border: solid 1px black;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.post .calendar p {
+    font-size: 14px;
+}
+
+.post img {
+    padding-right: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.post .card-text {
+    padding-top: 10px;
+}
+
+.post .card-body {
+    padding-top: 0;
+    margin-left: 20px;
+}
+
+.post .card-title {
+    padding-top: 10px;
+}
+
+.post .text-muted {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.post hr {
+    margin: 35px auto;
+}
+
+.no-bord {
+    border: 0;
+}
+
+/*review*/
+
+.review {
+    background-color: #f8f8f8;
+    padding-bottom: 80px;
+}
+
+/*clients*/
+
+.clients {
+    padding: 100px;
+}
+
+.clients img {
+    height: 100%;
+    width: auto;
+    min-width: 160px;
+}
+
+.review li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.review li.active {
+    background-color: #c0301c;
+}
+
+/*review*/
+.review {
+    text-align: center;
+}
+
+.review p {
+    padding: 0 20%;
+}
+
+.review h6 {
+    margin-bottom: 40px;
+}
+
+/*get__in*/
+
+.get__in {
+    text-align: center;
+}
+
+.get__in h3 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.get__in .card-body {
+    text-align: left;
+    padding-top: 0;
+}
+
+.get__in .card-body p {
+    font-size: 12px;
+}
+
+.get__in .card-body h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.get__in i {
+    font-size: 20px;
+}
+
+.dark_btn {
+    padding: 10px 30px;
+    color: #555;
+    border-color: #555;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 0;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.dark_btn:hover {
+    color: #fff;
+    background-color: #c0301c;
+    border-color: #c0301c;
+}
+
+.get__in form {
+    margin-left: 80px;
+}
+
+.get__in input,
+.get__in textarea {
+    border-radius: 0;
+    border: solid 1px #555;
+}
+
+.get__in input {
+    margin-right: 20px;
+}
+
+.get__in textarea {
+    margin-bottom: 20px;
+}
+
+form [value],
+[placeholder] {
+    text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: #c0301c;
+    padding: 50px;
+    color: #fff;
+}
+
+footer p {
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+footer .line {
+    background-color: #fff;
+}
+
+footer i {
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {
+    .team .img__block {
+        height: 205px;
+    }
+
+    .latestWorks img {
+        min-height: 290px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    .clients img {
+        padding: 20px;
+    }
+
+    .get__in form {
+        margin-left: 0;
+    }
+
+    .team .img__block {
+        height: 298px;
+    }
+
+    .latestWorks img {
+        min-height: 210px;
+    }
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .post img {
+        margin-bottom: 20px;
+    }
+
+    .post .card-body {
+        margin-left: 0;
+    }
+
+    .team .img__block {
+        height: 100%;
+    }
+
+
+    .services .card-deck {
+        flex-direction: column;
+    }
+
+    .get__in i {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5%;
+    }
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .latestWorks img {
+        min-height: 100%;
+    }
+    
+    footer {
+    padding: 20px;
+    
+}
+}
+
+
+/* Iphone 5 */
+@media (max-width: 320px) {}
